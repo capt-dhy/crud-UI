@@ -5,7 +5,7 @@ function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/projects/")
+    fetch("http://https://projects.onrender.com/api/projects/")
       .then((res) => res.json())
       .then((result) => {
         setProjects(result.data); // Access the 'data' property
